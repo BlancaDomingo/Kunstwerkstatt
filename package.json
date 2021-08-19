@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "develop": "sass ./src/scss/main.scss ./src/style/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BlancaDomingo/Kunstwerkstatt/issues"
   },
-  "homepage": "https://github.com/BlancaDomingo/Kunstwerkstatt#readme"
+  "homepage": "https://github.com/BlancaDomingo/Kunstwerkstatt#readme",
+  "devDependencies": {
+    "sass": "^1.38.0"
+  }
 }
