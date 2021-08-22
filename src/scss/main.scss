@@ -22,6 +22,9 @@ h1, h2, h3 {
   font-family: variables.$jost;
   font-weight: 400;
 }
+/* header {
+  min-height: 10vh;
+} */
 
 h1 {
   position: absolute;
@@ -42,23 +45,30 @@ h1 {
 
 label .menu {
   position: absolute;
-  right: -100px;
+  /* right: -100px;
   top: -100px;
-  z-index: 100;
+ 
   width: 200px;
-  height: 200px;
-  background: variables.$kre;
-  border-radius: 50% 50% 50% 50%;
+  height: 200px; */
+  z-index: 100;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  background: variables.$kreT;
+   border-radius: 50% 50% 50% 50%; 
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 variables.$kre, 0 0 0 0 variables.$kre;
+  box-shadow: 0 0 0 0 variables.$kreT, 0 0 0 0 variables.$kreT;
   cursor: pointer;
 }
 
 label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
+  /* top: 135px;
+  left: 50px; */
+  top: 24px;
+  right: 10px;
   width: 30px;
   height: 2px;
   background: #000;
@@ -94,7 +104,7 @@ label input {
 }
 
 label input:checked+.menu {
-  box-shadow: 0 0 0 100vw variables.$kre, 0 0 0 100vh variables.$kre;
+  box-shadow: 0 0 0 100vw variables.$kreT; /*  0 0 0 100vh variables.$kreT;  */
   border-radius: 0;
 }
 
@@ -150,11 +160,115 @@ label a:hover {
 }
 
 
+/* animation */
+.animatContainer {
+ 
+ 
+  
+  
+ 
+  position: relative;
+  margin-top: 4em;
+}
+.animatItem {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+.animatItem img {
+  width: 120%;
+  display: block;
+  margin: 0 auto;
+}
+.animatItem:nth-child(1) {
+  
+ 
+  z-index: 10;
+  animation-name: ani1;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+.animatItem:nth-child(2) {
+  visibility: visible;
+  filter: brightness(-50%);
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+  animation-delay: 7s;
+}
+
+.animatItem:nth-child(3) {
+  animation-name: appear-stay;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ani1 {
+  0% {
+   
+    opacity: 0%;
+    
+    visibility: visible;
+  }
+  50% {
+    opacity: 100%;
+    transform: translateX(0);
+    
+    
+
+  }
+
+ 
+  100% {
+    transform: translateX(100%);
+    filter: contrast(50%), brightness(50%);
+    
+  }
+}
+
+@keyframes appear-stay {
+  0% {
+    visibility: visible;
+    transform: translateY(-300%);
+  }
+  20% {
+    transform: translateY(15%);
+  }
+  50% {
+    transform: translateY(-15%);
+  }
+  80% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+
 @media screen and (min-width: 576px) {
+
+ /*  header {
+    min-height: 8vh;
+  } */
+
   h1 {
       left: 50%;
       transform: translateX(-50%);
       font-size: 2rem;
       transition: all .5s;
   }
+
+  label .menu {
+  
+    right: 15px;
+    top: 15px;
+  }
+  
 }
