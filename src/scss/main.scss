@@ -8,15 +8,11 @@
   font-size: 1em;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-
-
 
 body {
   font-family: variables.$rob;
@@ -24,39 +20,30 @@ body {
   line-height: 1.6;
   background: variables.$wei;
   overflow-x: hidden;
-
 }
-
 
 .page {
   background-image: url(../images/fondoglas1.png);
   width: 100%;
   height: 100%;
   background-size: cover;
-
   background-position: top;
   background-repeat: no-repeat;
   margin: 0;
-
 }
 
 a {
   text-decoration: none;
-
 }
 
 
-/* h1 */
+/* .......h1...... */
 
-/* .aH1 {
-  margin-top: 1.5em;
-} */
 
 h1 {
   font-family: variables.$belle;
-  padding-top: 1em;
-
   font-size: 2.2rem;
+  padding-top: 1em;
   margin: 0;
   margin-left: 10%;
   transition: all 300ms;
@@ -64,14 +51,16 @@ h1 {
   &:hover {
     transform: scale(1.1);
   }
+
+  .j {
+
+    color: variables.$red;
+
+  }
 }
 
 
-.j {
 
-  color: variables.$red;
-
-}
 
 
 
@@ -79,59 +68,63 @@ h1 {
 
 label {
   position: static;
+
+  .menu {
+    position: absolute;
+
+    z-index: 200;
+    right: 1.2em;
+    top: 1.5em;
+    width: 50px;
+    height: 50px;
+    background: variables.$kreT;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 variables.$kreT, 0 0 0 0 variables.$kreT;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+
+    &:after,
+    &:before {
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+    &:before {
+      top: -10px;
+    }
+  
+    &:after {
+      bottom: -10px;
+    }
+  }
+
+  
 }
 
 
-label .menu {
-  position: absolute;
 
-  z-index: 200;
-  right: 1.2em;
-  top: 1.5em;
-  width: 50px;
-  height: 50px;
-  background: variables.$kreT;
-  border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 variables.$kreT, 0 0 0 0 variables.$kreT;
-  cursor: pointer;
-}
 
-label .hamburger {
-  position: absolute;
 
-  top: 24px;
-  right: 10px;
-  width: 30px;
-  height: 2px;
-  background: #000;
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-label .hamburger:after,
-label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #000;
-}
-
-label .hamburger:before {
-  top: -10px;
-}
-
-label .hamburger:after {
-  bottom: -10px;
-}
 
 label input {
   display: none;
@@ -479,7 +472,7 @@ h2 {
   }
 
   label .menu {
-    right: 3em;
+    right: 4em;
     top: 2.7em;
   }
 
@@ -647,3 +640,4 @@ h2 {
   }
 
 }
+
