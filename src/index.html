@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Source+Sans+Pro:wght@200;300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto+Condensed&family=Roboto:wght@100;300&display=swap"
         rel="stylesheet">
+
+
     <link rel="stylesheet" href="style/main.css">
+
     <title>Kunstwerkstatt</title>
 </head>
 
 <body>
     <header>
         <div class="aH1">
-            <a href="https://www.mariotestino.com/" target="_blank">
-                <h1>BEATE <span class="j">J</span>AHN VORHOLT</h1>
+            <a href="#">
+                <h1>Beate <span class="j">J</span>ahn Vorholt</h1>
             </a>
         </div>
         <label>
@@ -36,43 +40,61 @@
     </header>
     <main>
         <section>
-            <div class="animatContainer">
-                <div class="animatItem">
-                    <img src="./images/doing.jpg" alt="...">
-                </div>
-
-                <div class="animatItem">
-                    <img src="images/tropfen.jpg" alt="...">
-                </div>
-
-                <div class="animatItem">
-                    <img src="images/gruen.jpg" alt="...">
-                </div>
+            <div class="w3-content w3-section" style="max-width:90%; margin-top: 0;">
+                <img class="mySlides" src="./images/feuer.jpg" style="width:100%">
+                <img class="mySlides" src="./images/beate.jpg" style="width:100%">
+                <img class="mySlides" src="./images/meer.jpg" style="width:100%">
             </div>
         </section>
         <section>
             <div class="introContainer">
-                <div class="intro1">
-                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque a rerum minima voluptas
-                    fuga, soluta veritatis eos ducimus eius officia, repellendus doloribus enim. Quibusdam repudiandae
-                    ex
-                    quisquam neque nobis aperiam voluptas libero modi culpa facilis, enim quo consectetur quis minus
-                    ducimus
-                    nesciunt incidunt commodi obcaecati!"
-                </div>
-                <div>
-                    <p class="intro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus a minima, error
-                        aliquid iusto odio
-                        voluptates eligendi aspernatur laborum exercitationem impedit dolorum eaque excepturi debitis
-                        veniam, voluptate sed inventore cumque. Fuga exercitationem facere id pariatur autem officiis
-                        inventore reprehenderit, dicta suscipit consectetur temporibus, nisi accusamus maiores nostrum
-                        repellat quisquam quia.</p>
-                   
-                </div>
+
+                <p class="intro2"><span class="intro1">
+                        FASZINATION GLAS
+                    </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus a minima, error
+                    aliquid iusto odio
+                    voluptates eligendi aspernatur laborum exercitationem impedit dolorum eaque excepturi debitis
+                    veniam, voluptate sed inventore cumque. Fuga exercitationem facere id pariatur autem officiis
+                    inventore reprehenderit, dicta suscipit consectetur temporibus, nisi accusamus maiores nostrum
+                    repellat quisquam quia.</p>
+
+
             </div>
+        </section>
+        <section class="instag">
+            <h2>Instagram</h2>
+            <a href="https://www.instagram.com/p/CP-nTQHD8xk/" target="_blank">
+                <img src="./images/gruen.jpg" alt="..." width="100">
+            </a>
+
+
+
+
+
+
         </section>
     </main>
 
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>

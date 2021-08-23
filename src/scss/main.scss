@@ -11,60 +11,59 @@
 
 body {
 
-  font-family: variables.$sspro;
+  font-family: variables.$rob;
   font-size: 1.2em;
   line-height: 1.6;
   background: variables.$wei;
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3 {
-  font-family: variables.$jost;
-  font-weight: 400;
-}
-h1 {
-  text-align: center;
-}
 
-header {
+
+
+/* header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 
 /* h1 */
 
 .aH1 {
-  margin-top: .8em; 
+  margin-top: 1.5em; 
 
   & a {
     
     color: #000;
     text-decoration: none;
     
-    transition: all 300ms;
+    
+  
+  }
+}
 
-    &:hover {
-      filter: opacity(90%);
-    }
+h1 {
+  font-family: variables.$belle;
+  
+  font-size: 2.2rem;
+  margin: 0;
+  margin-left: 10%;
+  transition: all 300ms;
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
 
-h1 {
-
-  font-size: 1.5rem;
+.j {
+  
+  color: variables.$red;
 
 }
 
-
-.j {
-  font-weight: 500;
-  color: variables.$red;
-
+label {
+  position: static;
 }
 
 
@@ -72,8 +71,8 @@ label .menu {
   position: absolute;
  
    z-index: 200;
-  right: .5em;
-  top: .5em;
+  right: 1.2em;
+  top: 1.2em;
   width: 50px;
   height: 50px;
   background: variables.$kreT;
@@ -168,7 +167,8 @@ label a {
   display: block;
   color: #000;
   text-decoration: none;
-  font-family: variables.$jost;
+  font-family: variables.$rob;
+  font-weight: bold;
 
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);
   transition: text-decoration-color 300ms;
@@ -179,129 +179,39 @@ label a:hover {
 } 
 
   
-
-
-
-/* animation */
-
-section:first-child {
-  position: static;
-  height: fit-content;
-}
-.animatContainer {
-  position: relative;
-  margin-top: 0;
-}
-
-.animatItem {
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-}
-
-.animatItem img {
-  width: 120%;
-  display: block;
-  margin: 0 auto;
-}
-
-.animatItem:nth-child(1) {
-
-
-  z-index: 10;
-  animation-name: ani1;
-  animation-duration: 7s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-}
-
-.animatItem:nth-child(2) {
-  visibility: visible;
-  filter: brightness(-50%);
-  animation-name: appear;
-  animation-duration: 1s;
-  animation-iteration-count: 3;
-  animation-delay: 7s;
-}
-
-.animatItem:nth-child(3) {
-  animation-name: appear-stay;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-delay: 7s;
-  animation-fill-mode: forwards;
+.mySlides {
+  display:none;
 }
 
 
 
-@keyframes ani1 {
-  0% {
-
-    opacity: 0%;
-
-    visibility: visible;
-  }
-
-  50% {
-    opacity: 100%;
-    transform: translateX(0);
-
-
-
-  }
-
-
-  100% {
-    transform: translateX(100%);
-    filter: contrast(50%), brightness(50%);
-
-  }
-}
-
-@keyframes appear-stay {
-  0% {
-    visibility: visible;
-    transform: translateY(-300%);
-  }
-
-  20% {
-    transform: translateY(15%);
-  }
-
-  50% {
-    transform: translateY(-15%);
-  }
-
-  80% {
-    transform: translateY(5%);
-  }
-
-  100% {
-    transform: translateY(0);
-    visibility: visible;
-  }
-}
 
 
 /* Introduction */
 
  .introContainer {
-  position: static; 
+ 
   background-color: variables.$kre;
-  margin: 1rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 1.5em;
+  
 } 
 
 .intro1 {
+  font-family: variables.$robCond;
   text-transform: uppercase;
   font-weight: bold;
 }
 .intro2 {
-  margin-top: 1em;
+  display: inline-block;
+ 
+  text-align: justify;
+}
+
+/* instagram */
+.instag {
+  margin: 1.5em;
 }
 
 
@@ -310,13 +220,34 @@ section:first-child {
   h1 {
   
    /*  transform: translateX(-50%); */
-    font-size: 2rem;
+  
+    font-size: 3rem;
     transition: all .5s;
   }  
 
   label .menu {
-    right: 1em;
-    top: .8em;
+    right: 3em;
+    top: 1.7em;
+  }
+
+}
+@media screen and (min-width: 992px) { 
+  
+
+  label .menu {
+    right: 3.5em;
+   
+  }
+
+}
+@media screen and (min-width: 1400px) { 
+ 
+
+
+
+  label .menu {
+    right: 5em;
+   
   }
 
 }
