@@ -1,10 +1,18 @@
 @use 'variables';
 
+@mixin title {
+  font-family: variables.$robCond;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 
@@ -18,38 +26,26 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
 
-
-
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+}
 
 
 /* h1 */
 
 .aH1 {
-  margin-top: 1.5em; 
-
-  & a {
-    
-    color: #000;
-    text-decoration: none;
-    
-    
-  
-  }
+  margin-top: 1.5em;
 }
 
 h1 {
   font-family: variables.$belle;
-  
+
   font-size: 2.2rem;
   margin: 0;
   margin-left: 10%;
   transition: all 300ms;
+
   &:hover {
     transform: scale(1.1);
   }
@@ -57,7 +53,7 @@ h1 {
 
 
 .j {
-  
+
   color: variables.$red;
 
 }
@@ -73,8 +69,8 @@ label {
 
 label .menu {
   position: absolute;
- 
-   z-index: 200;
+
+  z-index: 200;
   right: 1.2em;
   top: 1.2em;
   width: 50px;
@@ -89,7 +85,7 @@ label .menu {
 
 label .hamburger {
   position: absolute;
-  
+
   top: 24px;
   right: 10px;
   width: 30px;
@@ -127,8 +123,8 @@ label input {
 }
 
 label input:checked+.menu {
-  box-shadow: 0 0 0 100vw variables.$kreT,  0 0 0 100vh variables.$kreT; 
- 
+  box-shadow: 0 0 0 100vw variables.$kreT, 0 0 0 100vh variables.$kreT;
+
   border-radius: 0;
 }
 
@@ -165,26 +161,27 @@ label nav {
   -webkit-transition: .4s 0s ease-in-out;
   transition: .4s 0s ease-in-out;
 }
+
 label .menuRight {
   margin-left: 2em;
 
 }
-label .menuLeft {
-  font-weight: bold;
 
-}
+label .menuLeft,
 label p {
   font-weight: bold;
+
 }
 
+
 label a {
-  
+
   margin-bottom: 1em;
   display: block;
   color: #000;
-  text-decoration: none;
-  
  
+
+
 
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);
   transition: all 300ms;
@@ -192,11 +189,13 @@ label a {
 
 label a:hover {
   text-decoration-color: rgba(0, 0, 0, 1);
-} 
+}
 
-  
+/* .....Slide..... */
+
+
 .mySlides {
-  display:none;
+  display: none;
 }
 
 
@@ -205,41 +204,95 @@ label a:hover {
 
 /* Introduction */
 
- .introContainer {
- 
+.introS {
+
   background-color: variables.$kre;
   width: 90%;
   margin: 1.5em auto;
   padding: 1.5em;
-  
-} 
 
-.intro1 {
-  font-family: variables.$robCond;
-  text-transform: uppercase;
-  font-weight: bold;
 }
+
+.intro1,
+h2 {
+  @include title;
+}
+
 .intro2 {
   display: inline-block;
- 
+
   text-align: justify;
 }
 
+
+
 /* instagram */
-.instag {
-  margin: 1.5em;
+.instagS {
+  width: 90%;
+  margin: 1.5em auto;
+}
+
+.instagram {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+  gap: .5em;  
+
+  span {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 0.2em 0.7em; 
+  }
+
+  i {
+  
+    color: variables.$weiT;
+    font-size: 2em;
+    
+  }
 }
 
 
-@media screen and (min-width: 576px) { 
+.insta {
+  width: 99%;
+  height: 10em;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; 
+  padding: 0.5em;
+}
+
+.insta1 {
+  background-image: url(../images/inst1.png);
+}
+
+.insta2 {
+  background-image: url(../images/inst2.png);
+}
+.insta3 {
+  background-image: url(../images/inst3.png);
+}
+.insta4 {
+  background-image: url(../images/inst4.png);
+}
+
+
+
+
+@media screen and (min-width: 576px) {
 
   h1 {
-  
-   /*  transform: translateX(-50%); */
-  
+
+    /*  transform: translateX(-50%); */
+
     font-size: 3rem;
     transition: all .5s;
-  }  
+  }
 
   label .menu {
     right: 3em;
@@ -247,23 +300,25 @@ label a:hover {
   }
 
 }
-@media screen and (min-width: 992px) { 
-  
+
+@media screen and (min-width: 992px) {
+
 
   label .menu {
     right: 3.5em;
-   
+
   }
 
 }
-@media screen and (min-width: 1400px) { 
- 
+
+@media screen and (min-width: 1400px) {
+
 
 
 
   label .menu {
     right: 5em;
-   
+
   }
 
 }
