@@ -1,0 +1,129 @@
+@use 'variables';
+@use "sass:map";
+
+/* breadcrumbs */
+
+.breadcrumb {
+    @include variables.m90;
+    @include variables.title;
+    margin-bottom: 0;
+}
+
+ul.breadcrumb {
+    padding: .5em 1em .5em 0;
+    list-style: none;
+    /* background-color: variables.$kre; */
+}
+
+ul.breadcrumb li {
+    display: inline;
+    color: variables.$grauDD;
+    font-weight: bold;
+
+}
+
+ul.breadcrumb li+li:before {
+    padding: .5em;
+    color: variables.$schw;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: variables.$schw;
+    text-decoration: none;
+    text-decoration: underline 0.15em variables.$schwT;
+    transition: all 300ms;
+}
+
+ul.breadcrumb li a:hover {
+    color: variables.$grauDD;
+    text-decoration-color: variables.$schw;
+
+}
+
+/* h2 */
+
+.h2Kunst {
+    @include variables.c90;
+    margin-bottom: 1.5em;
+
+    font-size: 1.5em;
+}
+
+/* slide */
+
+.slideK {
+    max-width: 90%;
+}
+
+/* Galerie */
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+
+} */
+
+
+.row {
+    @include variables.m90;
+    display: flex;
+    flex-wrap: wrap;
+   
+  
+}
+
+.column {
+  
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 .3em;
+  
+}
+
+.image {
+    margin-top: .6em;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+}
+
+
+
+.container {
+    position: relative;
+
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: variables.$kreT;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: variables.$granit; 
+    font-size: .9em;  
+    font-weight: 300;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    
+   
+    text-align: center;
+}
+

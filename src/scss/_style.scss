@@ -1,12 +1,7 @@
 @use 'variables';
 @use "sass:map";
 
-@mixin title {
-    font-family: variables.$robCond;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1em;
-}
+
 
 * {
     margin: 0;
@@ -226,6 +221,7 @@ label a:hover {
 
 .mySlides {
     display: none;
+    width: 100%;
 
 }
 
@@ -244,20 +240,18 @@ label a:hover {
 .introS {
 
     background-color: variables.$kre;
-    width: 90%;
-    margin: 1.5em auto;
+    @include variables.m90;
     padding: 1.5em;
 
 }
 
 .intro1,
 h2 {
-    @include title;
+    @include variables.title;
 }
 
 .intro2 {
     display: inline-block;
-
     text-align: justify;
 }
 
@@ -265,8 +259,7 @@ h2 {
 
 /* instagram */
 .instagS {
-    width: 90%;
-    margin: 1.5em auto;
+    @include variables.m90;
 
     h2 {
         margin-left: 1.5em;
@@ -391,8 +384,8 @@ h2 {
 
 /* footer */
 .flex1 {
-    width: 90%;
-    margin: 1.5em auto 0;
+    @include variables.m90;
+    margin-bottom: 0;
 
 }
 
@@ -427,9 +420,7 @@ h2 {
 }
 
 .newsletter form {
-    width: 90%;
-    margin: 0 auto;
-
+    @include variables.c90;
 
 }
 
@@ -455,8 +446,7 @@ h2 {
 }
 
 .blackInn {
-    width: 90%;
-    margin: 0 auto;
+    @include variables.c90;
 
 
 
