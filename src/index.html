@@ -20,7 +20,12 @@
 </head>
 
 <body>
+    
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-up"></i></button>
+
+
     <div class="page">
+      
         <header>
             <div class="aH1">
                 <a href="index.html">
@@ -36,7 +41,7 @@
                     <div class="hr"></div>
                     <a class="menuLeft" href="https://www.mariotestino.com/" target="_blank">KUNSTWERKSTATT</a>
                     <div class="hr"></div>
-                    <div >
+                    <div>
                         <p class="menuLeft">GALERIE</p>
                         <a class="marB menuRight" href='#'>UNIKATE</a>
                         <a class="menuRight" href='#'>SCHMUCK</a>
@@ -52,17 +57,19 @@
                     <div class="hr"></div>
                     <a class="menuLeft" href='#'>KONTAKT</a>
                     <div class="hr"></div>
-                    
+
                 </nav>
             </label>
 
         </header>
         <main>
             <section>
-                <div class="w3-content w3-section" style="max-width:90%; margin-top: 0;">
-                    <img class="mySlides" src="./images/feuer.jpg" style="width:100%">
-                    <img class="mySlides" src="./images/beate.jpg" style="width:100%">
-                    <img class="mySlides" src="./images/meer.jpg" style="width:100%">
+                <div class="slide w3-content w3-section">
+                    <img class="mySlides w3-animate-left w3-animate-fading " src="./images/feuer.jpg"
+                        style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="./images/beate.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-right w3-animate-fading" src="./images/meer.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="./images/augen.jpg" style="width:100%">
                 </div>
             </section>
             <section class="introS">
@@ -166,6 +173,30 @@
 
         </main>
 
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
 
 
         <script>
@@ -183,7 +214,7 @@
                     myIndex = 1
                 }
                 x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
+                setTimeout(carousel, 4000); // Change image every 2 seconds
             }
         </script>
     </div>
