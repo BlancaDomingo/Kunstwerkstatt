@@ -31,13 +31,17 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb li a {
     color: variables.$schw;
     text-decoration: none;
-    text-decoration: underline 0.15em variables.$schwT;
+ /*    text-decoration: underline 0.15em variables.$schwT; */
+    border-bottom: 3px solid variables.$schwT; 
     transition: all 300ms;
 }
 
 ul.breadcrumb li a:hover {
     color: variables.$grauDD;
-    text-decoration-color: variables.$schw;
+    /* text-decoration-color: variables.$schw; */
+    
+        border-bottom: 3px solid variables.$schw; 
+      
 
 }
 

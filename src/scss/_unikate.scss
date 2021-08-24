@@ -1,0 +1,95 @@
+@use 'variables';
+@use "sass:map";
+
+/* #myImg {
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+/*  
+/* The Modal (background) 
+.modal {
+
+    display: none;
+    /* Hidden by default */
+  /*   position: fixed;
+    /* Stay in place */
+/*     z-index: 1; */
+    /* Sit on top */
+    /* padding-top: 3em; */
+    /* Location of the box */
+    /* left: 0;
+    top: 0;
+    width: 100%; */
+    /* Full width */
+    /*   height: 100%; /* Full height */
+/*     overflow: auto; */
+    /* Enable scroll if needed */
+   /*  background-color: variables.$schw; */
+    /* Fallback color */
+    /* background-color: rgba(0,0,0,0.9); */
+    /* Black w/ opacity */
+/* }  */
+
+/* Modal Content (image) */
+/* .modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 50em;
+} */
+
+/* Caption of Modal Image */
+/* #caption {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 50em;
+    text-align: center;
+    color: variables.$wei;
+    font-weight: bold;
+    padding: 1em 0;
+    height: 7em;
+} */
+
+/* Add Animation */
+/* .modal-content,
+#caption {
+
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}  */
+
+/* The Close Button */
+/* .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: variables.$wei;
+    font-size: 3em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}  */
