@@ -1,0 +1,60 @@
+@use 'variables';
+@use "sass:map";
+
+
+.page1 {
+   
+    scroll-behavior: smooth;
+    background-color: variables.$wei;
+
+}
+
+.sectionKont {
+    @include variables.m90;
+    
+}
+
+.daten {
+    padding: 1em 1em 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.tit1 {
+    font-family: variables.$robCond;
+    font-weight: bold;
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+
+.tit2 {
+    font-family: variables.$rob;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.tit3 {
+    font-family: variables.$robCond;
+    font-weight: bold;
+    font-size: .8em;
+    margin-top: 1em;
+}
+
+.bla {
+    font-family: variables.$rob;  
+    font-size: 1em;
+    
+
+}
+
+iframe {
+    width:100%;
+    height: 100vw;
+    border: 0;
+}
+hr {
+    @include variables.c90;
+}
