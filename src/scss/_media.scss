@@ -27,7 +27,7 @@
         top: 2.7em;
     }
 
-    /* _kunst */
+    /* _kunst, past */
     .column, 
     .card {
         
@@ -35,9 +35,11 @@
         max-width: 50%;
     }
 
+   
+  
 }
 
-/* breakpoints */
+
 
 @media screen and (min-width: 590px) {
 
@@ -45,7 +47,7 @@
     .insta8 {
 
         display: flex;
-    }
+    }   
 
 }
 
@@ -124,6 +126,24 @@
         max-width: 33%;
     }
 
+
+     /* past, pastCard */
+     .card1 {
+        display: flex;
+       
+    }
+    .headCard1 {
+        width: 50%;
+        height: inherit;
+        
+    }
+
+   
+    .bodyCard1 {
+        width: 50%;
+    }
+
+
   
 
 
@@ -158,7 +178,14 @@
         display: flex;
     }
 
-    
+    /* pastcard */
+
+    .card1 {
+        width: 80%;
+        
+       
+    }
+   
   
 }
 
@@ -177,6 +204,13 @@
         flex: 25%;
         max-width: 25%;
     }
+     /* pastcard */
+
+     .card1 {
+        width: 70%;
+        
+       
+    }
 
 
 }
@@ -186,6 +220,14 @@
 
     .instagram {
         @include variables.c90;
+    }
+
+     /* pastcard */
+
+     .card1 {
+        width: 60%;
+        
+       
     }
 
 }
@@ -198,9 +240,8 @@
     label .menu {
         right: 9em;
 
-    }
-
-}
+    } 
+   
 
 @media screen and (min-width: 1489px) {
     .slide {
@@ -215,6 +256,15 @@
         width: 80%;
         margin: 0 auto;
     }
+
+       /* pastcard */
+
+       .card1 {
+        width: 50%;
+        
+       
+    }  
+}
 
 }
 
