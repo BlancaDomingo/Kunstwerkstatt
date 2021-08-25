@@ -99,100 +99,121 @@
                 <!--  column 1 -->
                 <div class="column">
 
-            
 
 
-                    <!-- <img id="myImg" src="images/feuer.jpg" alt="Feuer....." style="width:100%;max-width:100%">
-                    <img id="myImg" src="images/meer.jpg" alt="keine ahnung....." style="width:100%;max-width:100%">
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
 
-               
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
 
-                    <!-- The Modal -->
-                   <!--  <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div> -->
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
 
 
-
-                   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </section>
-            <footer>
-                <div class="flex1">
-
-                    <form class="newsletter" action="https://formspree.io/f/xeqvzwea" method="post">
-
-                        <label for="idEmail">Abonnieren Sie meinen Newsletter</label>
-
-                        <input id="idEmail" name="_replyto" type="email" required placeholder="&nbsp;EMAIL ADRESSE">
-
-                        <button type="submit">Anmelden</button>
-
-
-                    </form>
-
-                    <div class="fotoUnten"><img src="./images/kunst/IMG_0174.png" alt="..."></div>
                 </div>
-                <div class="black">
-                    <div class="blackInn">
-                        <div class="icons">
-                            <a href="https://www.instagram.com/jahnvorholt/" target="_blank"><i
-                                    class="fa fa-instagram"></i></a>
-                            <a href="mailto:die-kunst-werkstatt@web.de"><i class="far fa-envelope"></i></a>
+
+                <!-- column2 -->
 
 
-                        </div>
-                        <span>&copy;&nbsp;Copyright 2021 </span>
+                <div class="column">
+
+
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+
+                </div>
+
+                 <!--  column 3 -->
+                 <div class="column">
+
+
+
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/augen.jpg" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+
+                </div>
+
+                <!-- column4 -->
+
+
+                <div class="column">
+
+
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+                    <img src="./images/kunst/IMG_2331.JPG" onclick="onClick(this)" class="w3-hover-opacity imageU">
+
+
+                </div> 
+
+
+                <div id="modal01" class="w3-modal m-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-light-grey w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img id="img01" style="width:100%">
                     </div>
                 </div>
-            </footer>
-
+            </section>
         </main>
- 
-       <!--  modal -->
-        <!-- <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
+
+        <footer>
+            <div class="flex1">
+
+                <form class="newsletter" action="https://formspree.io/f/xeqvzwea" method="post">
+
+                    <label for="idEmail">Abonnieren Sie meinen Newsletter</label>
+
+                    <input id="idEmail" name="_replyto" type="email" required placeholder="&nbsp;EMAIL ADRESSE">
+
+                    <button type="submit">Anmelden</button>
+
+
+                </form>
+
+                <div class="fotoUnten"><img src="./images/kunst/IMG_0174.png" alt="..."></div>
+            </div>
+            <div class="black">
+                <div class="blackInn">
+                    <div class="icons">
+                        <a href="https://www.instagram.com/jahnvorholt/" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="mailto:die-kunst-werkstatt@web.de"><i class="far fa-envelope"></i></a>
+
+
+                    </div>
+                    <span>&copy;&nbsp;Copyright 2021 </span>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!--  modal -->
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
             }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-            </script>
- -->
+        </script>
+
         <script>
             //Get the button
             var mybutton = document.getElementById("myBtn");

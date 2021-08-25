@@ -16,10 +16,18 @@
     font-size: 1em;
 }
 
+@mixin imgGal {
+    margin-top: .6em;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+}
+
 
 /* variables */
 $schw: rgba(0, 0, 0, 1);
 $schwT:rgba(0, 0, 0, 0);
+$schwTT: rgba(0, 0, 0, 0.8);
 $grau: #ddd;
 $grauD: rgba(204, 204, 204, 1);
 $grauDD: rgba(187, 187, 187, 1);

@@ -87,10 +87,7 @@ ul.breadcrumb li a:hover {
 }
 
 .image {
-    margin-top: .6em;
-    vertical-align: middle;
-    width: 100%;
-    display: block;
+    @include variables.imgGal;
 }
 
 
