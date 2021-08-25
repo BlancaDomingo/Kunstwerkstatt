@@ -22,6 +22,10 @@
     width: 100%;
     display: block;
 }
+@mixin underline {
+    text-decoration: underline 0.15em $schwT;
+    transition: all 300ms; 
+}
 
 
 /* variables */
@@ -31,8 +35,10 @@ $schwTT: rgba(0, 0, 0, 0.8);
 $grau: #ddd;
 $grauD: rgba(204, 204, 204, 1);
 $grauDD: rgba(187, 187, 187, 1);
+$grauDDD: rgba(170,170,170,1);
 $grauT: rgba(204, 204, 204, .7);
 $grauTT: rgba(204, 204, 204, .9);
+
 $kre: #f2eee9;
 /* $kreT:rgba(242, 238, 233, .7); */
 /* $kreT:rgba(255, 255, 255, .9);  */

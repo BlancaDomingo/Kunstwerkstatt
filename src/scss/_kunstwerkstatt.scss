@@ -73,8 +73,7 @@ ul.breadcrumb li a:hover {
 .row {
     @include variables.m90;
     display: flex;
-    flex-wrap: wrap;
-   
+    flex-wrap: wrap;  
   
 }
 
