@@ -41,16 +41,35 @@
 }
 
 .imgCard1 {
-    background-image: url(../images/inst1.png);
+    background-image: url(../images/card/IMG_2550.JPG);
+}
+.imgCard2 {
+    background-image: url(../images/card/IMG_2552.JPG);
+}
+.imgCard3 {
+    background-image: url(../images/card/P1080296.JPG);
+}
+.imgCard4 {
+    background-image: url(../images/card/IMG_4215.JPG);
+}
+.imgCard5 {
+    background-image: url(../images/card/IMG_2297.JPG);
+}
+.imgCard6 {
+    background-image: url(../images/card/P1070620.JPG);
+}
+.imgCard7 {
+    background-image: url(../images/card/IMG_3766.JPG);
 }
 
 .bodyCard {
-    background-color: variables.$wei;
+    background-color: variables.$kre;
 
     padding: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 15em;
 }
 
 .datum {
@@ -117,7 +136,7 @@
 
 }
 .bodyCard1 {
-    background-color: variables.$wei;
+    background-color: variables.$kre;
 
     padding: 1.5em;
     display: flex;
@@ -127,3 +146,10 @@
 .textCard {
     text-align: justify;
 }
+
+.imgCard11 {
+    background-image: url(../images/card/IMG_3662.JPG);
+}
+
+
+
