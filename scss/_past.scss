@@ -1,0 +1,155 @@
+@use 'variables';
+@use "sass:map";
+
+
+.noline::before {
+    display: none;
+}
+
+
+
+
+.rowCard {
+    @include variables.m90;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 .3em;
+    margin-bottom: 1.5em;
+
+}
+
+
+
+.headCard {
+    width: 100%;
+    height: 12em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headCard:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.imgCard1 {
+    background-image: url(../images/card/IMG_2550.JPG);
+}
+.imgCard2 {
+    background-image: url(../images/card/IMG_2552.JPG);
+}
+.imgCard3 {
+    background-image: url(../images/card/P1080296.JPG);
+}
+.imgCard4 {
+    background-image: url(../images/card/IMG_4215.JPG);
+}
+.imgCard5 {
+    background-image: url(../images/card/IMG_2297.JPG);
+}
+.imgCard6 {
+    background-image: url(../images/card/P1070620.JPG);
+}
+.imgCard7 {
+    background-image: url(../images/card/IMG_3766.JPG);
+}
+
+.bodyCard {
+    background-color: variables.$kre;
+
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 15em;
+}
+
+.datum {
+    font-family: variables.$robCond;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: variables.$grauDDD;
+}
+
+.event {
+    font-family: variables.$rob;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: variables.$schw;
+    margin-bottom: 1.8em;
+    @include variables.underline;
+}
+
+.mehr {
+
+    font-family: variables.$robCond;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: variables.$schw;
+    @include variables.underline;
+
+}
+
+.event:hover,
+.mehr:hover {
+
+    text-decoration: underline 0.15em variables.$schw;
+
+}
+
+
+/* pastCard scss */
+
+.card1 {
+    @include variables.m90;
+     max-width: 100%;
+   
+}
+
+
+.headCard1 {
+    width: 100%;
+    height: 12em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event1 {
+    font-family: variables.$rob;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: variables.$schw;
+    margin-bottom: 1.8em;
+
+}
+.bodyCard1 {
+    background-color: variables.$kre;
+
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.textCard {
+    text-align: justify;
+}
+
+.imgCard11 {
+    background-image: url(../images/card/IMG_3662.JPG);
+}
+
+
+
