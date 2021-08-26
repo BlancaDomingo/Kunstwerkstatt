@@ -1,0 +1,78 @@
+@use 'variables';
+@use "sass:map";
+
+
+/* .page1 {
+   
+    scroll-behavior: smooth;
+    background-color: variables.$wei;
+
+}
+
+.sectionKont {
+    @include variables.m90;
+    
+}
+
+.daten {
+    padding: 1em 1em 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+} */
+.datenAkt{
+    
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: variables.$wei;
+    
+}
+
+.titAkt {
+    font-family: variables.$robCond;
+    color: variables.$grauDDD;
+    font-weight: bold;
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+
+/* .tit2 {
+    font-family: variables.$rob;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+} */
+
+/* .tit3 {
+    font-family: variables.$robCond;
+    font-weight: bold;
+    font-size: .8em;
+    margin-top: 1em;
+} */
+
+.blaAkt {
+    font-family: variables.$rob;  
+    font-size: 1em;
+    text-align: justify;
+    margin-top: 1em;
+    
+
+}
+.imgAkt {
+    width:100%;
+   
+    border: 0;
+}
+
+
+/* iframe {
+    width:100%;
+    height: 100vw;
+    border: 0;
+}
+hr {
+    @include variables.c90;
+} */
