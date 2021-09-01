@@ -812,7 +812,7 @@ hr {
   /* kontakt */
   .daten {
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
   }
 
   iframe {
@@ -902,6 +902,8 @@ hr {
   /* kontakt */
   .sectionKont {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .daten {

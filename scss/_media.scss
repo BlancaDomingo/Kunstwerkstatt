@@ -40,7 +40,8 @@
     .daten {       
        
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
+        
         
     }
     iframe {
@@ -161,6 +162,8 @@
 
     .sectionKont {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .daten {
         width: 40%;     
