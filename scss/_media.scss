@@ -182,9 +182,15 @@
 
     /* aktuelles */
 
+    .sectionAkt {
+        display: flex;
+        
+    }
+
     .imgAkt,
     .datenAkt {
         width:50%;
+        
 
     }
 
@@ -235,9 +241,17 @@
     }
 
     /* kontakt */
+
     .sectionKont {
         width: 52em;
         margin: 1.5em auto;
+    }
+
+    /* aktuelles */
+
+    .sectionAkt {
+        width: 52em;
+
     }
    
   
