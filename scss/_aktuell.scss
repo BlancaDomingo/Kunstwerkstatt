@@ -15,6 +15,27 @@
     @include variables.m90;
     
 }
+.sectionAkt0 {
+    width: 90%;
+    margin: 1.5em auto 0; 
+    display:flex;
+    flex-direction: column-reverse;  
+}
+
+.ohneMarginUnten {
+    margin-bottom: 0;
+}
+
+.ohneMarginOben {
+    margin-top: 0;
+}
+
+.mOben {
+    margin-top: 10em;
+}
+
+
+
 
 .datenAkt{
     

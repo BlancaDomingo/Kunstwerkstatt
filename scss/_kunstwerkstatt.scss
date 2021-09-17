@@ -91,13 +91,13 @@ ul.breadcrumb li a:hover {
 
 
 
-.container {
+/* .container {
     position: relative;
 
-}
+} */
 
 
-
+/* 
 .overlay {
     position: absolute;
     top: 0;
@@ -109,11 +109,11 @@ ul.breadcrumb li a:hover {
     opacity: 0;
     transition: .5s ease;
     background-color: variables.$kreT;
-}
+} */
 
-.container:hover .overlay {
+/* .container:hover .overlay {
     opacity: 1;
-}
+} */
 
 .text {
     color: variables.$granit; 

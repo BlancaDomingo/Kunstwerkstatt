@@ -501,27 +501,26 @@ ul.breadcrumb li a:hover {
   display: block;
 }
 
-.container {
-  position: relative;
-}
+/* .container {
+    position: relative;
 
+} */
+/* 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #f2eee9;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: variables.$kreT;
+} */
+/* .container:hover .overlay {
+    opacity: 1;
+} */
 .text {
   color: #1d1d1d;
   font-size: 0.9em;
@@ -754,6 +753,25 @@ hr {
   margin: 1.5em auto;
 }
 
+.sectionAkt0 {
+  width: 90%;
+  margin: 1.5em auto 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.ohneMarginUnten {
+  margin-bottom: 0;
+}
+
+.ohneMarginOben {
+  margin-top: 0;
+}
+
+.mOben {
+  margin-top: 10em;
+}
+
 .datenAkt {
   padding: 1.5em 1em;
   display: flex;
@@ -921,6 +939,10 @@ hr {
     display: flex;
   }
 
+  .sectionAkt0 {
+    flex-direction: row;
+  }
+
   .imgAkt,
 .datenAkt {
     width: 50%;
@@ -959,7 +981,8 @@ hr {
   }
 
   /* aktuelles */
-  .sectionAkt {
+  .sectionAkt,
+.sectionAkt0 {
     width: 52em;
   }
 }
