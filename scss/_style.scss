@@ -52,12 +52,12 @@ a {
     padding: .5em .9em;
     border-radius: 50%;
     transition: all 300ms;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: variables.$grauTT;
     transform: scale(1.1);
-  }
+}
 
 /* .......h1...... */
 
@@ -166,20 +166,20 @@ label input:checked+.menu .hamburger:before {
 }
 
 label input:checked+.menu+nav {
-     opacity: 1;
-     
-     /* ++++++ */
-     /* z-index: 300; */
- 
-    /*  visibility: visible; */ 
- 
-    
-    
+    opacity: 1;
+
+    /* ++++++ */
+    /* z-index: 300; */
+
+    /*  visibility: visible; */
+
+
+
 }
 
 label nav {
     /* cambiar+++++ */
-    z-index: 300; 
+    z-index: 300;
     /* z-index: -1; */
 
 
@@ -189,11 +189,11 @@ label nav {
     font-family: variables.$robCond;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    opacity: 0;    
+    opacity: 0;
     /* visibility: hidden; */
-  
-    
-   
+
+
+
     -webkit-transition: .5s 0s ease-in-out;
     transition: .5s 0s ease-in-out;
 }
@@ -219,14 +219,14 @@ label a {
 
 
 
-    text-decoration: underline 0.15em rgba(0, 0, 0, 0); 
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
     /* border-bottom: 3px solid variables.$schwT;  */
 
     transition: all 500ms;
 }
 
 label a:hover {
-    text-decoration-color: rgba(0, 0, 0, 1); 
+    text-decoration-color: rgba(0, 0, 0, 1);
     /* border-bottom: 3px solid variables.$schw;  */
 }
 
@@ -321,23 +321,23 @@ h2 {
 }
 
 .insta1 {
-    background-image: url(../images/inst1.png);
+    background-image: url(../images/inst1.jpg);
 }
 
 .insta2 {
-    background-image: url(../images/inst2.png);
+    background-image: url(../images/inst2.jpg);
 }
 
 .insta3 {
-    background-image: url(../images/inst3.png);
+    background-image: url(../images/inst3.jpg);
 }
 
 .insta4 {
-    background-image: url(../images/inst4.png);
+    background-image: url(../images/inst4.jpg);
 }
 
 .insta5 {
-    background-image: url(../images/inst5.png);
+    background-image: url(../images/inst5.jpg);
     display: none;
 }
 
@@ -413,7 +413,7 @@ h2 {
 
 .newsletter input {
     width: 100%;
-   
+
 
     font-size: .8em;
     font-weight: bold;
@@ -433,9 +433,10 @@ h2 {
     padding: .5em;
     font-weight: bold;
     transition: all 300ms;
+
     &:hover {
         opacity: .5;
-        cursor: pointer;        
+        cursor: pointer;
     }
 }
 
@@ -449,6 +450,29 @@ h2 {
     align-items: flex-end;
     justify-content: center;
 }
+
+.info {
+    
+    margin-left: 3em;  
+    background-color: variables.$kre;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    
+    box-shadow: 10px 10px 10px #bbbaba;
+
+    transform: rotate(-15deg);
+    font-weight: bold;
+}
+
+.info:hover {
+
+    transform: scale(1.3);
+
+}
+
+
+
 
 .fotoUnten img {
     width: 40%;
@@ -475,6 +499,15 @@ h2 {
     justify-content: space-between;
     color: variables.$wei;
 
+    .impressum {
+        font-weight: bold;
+    }
+
+    .copyright {
+        font-size: .7em;
+    }
+
+
 }
 
 .icons a i {
@@ -483,8 +516,7 @@ h2 {
 }
 
 
-.icons a i:hover {
+.icons a i:hover,
+.impressum:hover {
     transform: scale(1.3);
-
-
 }
