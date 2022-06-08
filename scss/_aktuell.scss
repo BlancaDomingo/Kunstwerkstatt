@@ -1,6 +1,5 @@
-@use 'variables';
+@use "variables";
 @use "sass:map";
-
 
 /*  .page1 {
    
@@ -9,69 +8,54 @@
 
 } */
 
-
-
 .sectionAkt {
-    @include variables.m90;
-    
+  @include variables.m90;
 }
+
 .sectionAkt0 {
-    width: 90%;
-    margin: 1.5em auto 0; 
-    display:flex;
-    flex-direction: column-reverse;  
+  width: 90%;
+  margin: 1.5em auto 0;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .ohneMarginUnten {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .ohneMarginOben {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .mOben {
-    margin-top: 10em;
+  margin-top: 10em;
 }
 
-
-
-
-.datenAkt{
-    
-    
-    padding: 1.5em 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: variables.$kre;
-    
+.datenAkt {
+  padding: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: variables.$kre;
 }
 
 .titAkt {
-    font-family: variables.$robCond;
-    color: variables.$grauDDD;
-    font-weight: bold;
-    font-size: .8em;
-    margin-bottom: 1em;
+  font-family: variables.$robCond;
+  color: variables.$grauDDD;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }
-
-
 
 .blaAkt {
-    font-family: variables.$rob;  
-    font-size: 1em;
-    text-align: justify;
-    margin-top: 1em;
-    
-
+  font-family: variables.$rob;
+  font-size: 1em;
+  text-align: justify;
+  margin-top: 1em;
 }
 .imgAkt {
-    object-fit: cover;
-    width:100%;
-   
-    border: 0;
+  object-fit: cover;
+  width: 100%;
+
+  border: 0;
 }
-
-
-
